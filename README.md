@@ -59,3 +59,35 @@ obs: ** = potencia
 	. dps eu faço o logico:  
   (a > b) && (b % 2 == 0)  
 
+-> Operador ternário
+ - composto por dois simbolos na msm expressão-> ? e :
+ - se chama ternario pq tem tres partes:
+ . teste ? true : false
+    - a primeira parte é um teste logico
+	- a segunda parte é oq vai acontecer se o resultado do teste logico for true
+	- a terceira parte é oq vai acontecer se o resultado do teste logico for false  
+
+
+### DOM
+
+Document
+Object
+Model
+
+- conjunto de objetos dentro do navegador que da acesso aos componentes internos do website  
+- n funciona no nodeJs, por exemplo, só está presente quando eu rodo JS dentro do meu navegador
+  
+-> arvore DOM
+image.png
+  - começa da raiz (window), ent tudo do JS está dentro desse objeto
+  - dentro do window eu tenho varios outros objetos...
+  - cada um desses objetos (window, document, html, body, div...) são ditos 'elementos'  
+  
+-> Metodos de acesso
+  - eu posso selecionar esses elementos pra navegar dentro da arvore DOM  
+  - 5 metodos de acesso:  
+  1. por Marca   -> getElementsByTagName() 
+  2. por ID      -> getElementById()
+  3. por Nome    -> getElementsByName() 
+  4. por Classe  -> getElementsByClassName() 
+  5. por Seletor -> querySelector() ||querySelectorAll()

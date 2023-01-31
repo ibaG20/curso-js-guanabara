@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: #89666d;
+            color: #d2c29f;
+            font: normal 15pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg" class="msg">Clique em mim</div>
+
+    <script>
+        //window.document.write(window.document.charset)
+        //window.document.write(window.navigator.appName) 
+        //window.document.write(window.document.URL)
+
+        // o style daq sobrepoem o style do css
+
+        var corpo = window.document.body
+        corpo.style.background = '#565164';
+
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.writeln('No paragrafo 1 esta escrito assim: ' + p1.innerText + '<br>')
+        p1.style.color = '#d6e1c7';
+
+        var p2 = window.document.getElementsByTagName('p')[1]
+        window.document.writeln('No paragrafo 2 esta escrito assim: ' + p2.innerText + '<br>')
+
+        document.write(p2.innerText+'<br>') // nn puxa a formatação
+        document.write(p2.innerHTML+'<br>') // puxa a formatação
+
+        //window.alert(p2.innerHTML) // escreve o <strong> (html inteiro)
+        //window.alert(p2.innerText) // escreve sem o <strong>
+
+        var d = window.document.getElementById('msg')
+        d.style.background = '#92b395';
+        d.style.color = '#565164';
+        d.innerText = 'Estou aguardando...' //ta mudando o texto q ta na div
+        //window.document.getElementById('msg').innerText = 'Olá' //ta mudando tambem, só que de um jeito diferente
+
+        var f = window.document.querySelector('div#msg')
+        f.style.color = '#a95a52';
+    </script>
+</body>
+ 
