@@ -92,3 +92,8 @@ Model
   3. por Nome    -> getElementsByName() 
   4. por Classe  -> getElementsByClassName() 
   5. por Seletor -> querySelector() ||querySelectorAll()  
+
+-> Função
+ - conjunto de codigos que vao ser executadas só quando um evento ocorrer
+ - fica dentro de um bloco (duas chaves)
+ - function mover(){}

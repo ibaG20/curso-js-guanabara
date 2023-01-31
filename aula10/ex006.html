@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        body{
+            background-color: #96b5a6;
+        }
+        div#area {
+            font: normal 20pt Arial;
+            background: #4e383d;
+            color: #febeac;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+        </style>
+</head>
+<body>
+    <div id="area">
+        <!-- onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()" -->
+        <!--eu posso fazer assim, mas o meu html fica poluido-->
+        Interaja...
+    </div>
+    
+    <script>
+        var area = window.document.getElementById('area')
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', sair)
+        //ou eu posso usar o EventListener, que deixa tudo mais limpo
+        
+        function clicar() {
+            area.style.background = '#febeac'
+            area.style.color = '#4e383d'
+            area.innerText = 'Clicou!'
+        }
+        function entrar() {
+            area.style.background = '#fce1cb';
+            area.style.color = '#4e383d'; 
+            area.innerText = 'Entrou!'
+        }
+        function sair() {
+            area.style.background = '#4e383d';
+            area.style.color = '#febeac';
+            area.innerText = 'Saiu!'
+        }
+    </script>
+</body>
+</html>
