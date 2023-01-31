@@ -105,3 +105,5 @@ Model
  ...etc
 
 ### CONDIÇÕES
+
+- if...
