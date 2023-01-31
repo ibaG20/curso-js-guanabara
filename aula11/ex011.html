@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pais</title>
+    <style>
+        body{
+            background: #076461;
+            color: #9cc4ab;
+            font: normal 20pt Arial;
+            text-align: center;
+        }
+        input{
+            background: #9cc4ab;
+            color: #076461;
+        }
+        #button{
+            font: normal 12pt Arial;
+            margin: 2rem;
+            width: 7rem;
+            height: 2rem;
+        }
+        #res{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>PAÍS</h1>
+    Digite seu país: <input type="text" name="txtp" id="txtp">
+    <input id="button" type="button" value="enviar" onclick="enviar()">
+    <div id="res"></div>
+
+    <script>
+
+        function enviar() {
+            var txtp = window.document.getElementById('txtp')
+            var res = window.document.getElementById('res')
+            var pais = String(txtp.value)
+
+            res.innerHTML = `Vivendo no país <strong>${pais}</strong>. <br>`
+            if(pais == 'Brasil') {
+                res.innerHTML += `Você é <strong>Brasileiro</strong>! <br>`
+            }else{
+                res.innerHTML += `Você é <strong>Estrangeiro</strong>! <br>`
+
+            }
+        }
+    </script>
+</body>
+</html>

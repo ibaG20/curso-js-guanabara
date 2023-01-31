@@ -96,4 +96,12 @@ Model
 -> Função
  - conjunto de codigos que vao ser executadas só quando um evento ocorrer
  - fica dentro de um bloco (duas chaves)
- - function mover(){}
+ - function mover(){}  
+  
+-> eventos   
+ - onclick
+ - onmouseenter
+ - onmouseout  
+ ...etc
+
+### CONDIÇÕES
