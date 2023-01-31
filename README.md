@@ -1,4 +1,4 @@
-# Curso de JavaScript do Curso em Video
+# Curso de JavaScript do Curso em Video 👩‍💻
 
  - window.alert
  - window.confirm
