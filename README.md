@@ -70,24 +70,25 @@ obs: ** = potencia
 
 ### DOM
 
-Document
-Object
-Model
+Document  
+Object  
+Model  
 
 - conjunto de objetos dentro do navegador que da acesso aos componentes internos do website  
-- n funciona no nodeJs, por exemplo, só está presente quando eu rodo JS dentro do meu navegador
+- n funciona no nodeJs, por exemplo, só está presente quando eu rodo JS dentro do meu navegador  
   
--> arvore DOM
-image.png
-  - começa da raiz (window), ent tudo do JS está dentro desse objeto
-  - dentro do window eu tenho varios outros objetos...
+-> arvore DOM  
+![image](https://user-images.githubusercontent.com/98984386/215793274-691a98a8-d971-4ced-b80f-941b97ff1468.png)
+
+  - começa da raiz (window), ent tudo do JS está dentro desse objeto  
+  - dentro do window eu tenho varios outros objetos...  
   - cada um desses objetos (window, document, html, body, div...) são ditos 'elementos'  
   
--> Metodos de acesso
+-> Metodos de acesso  
   - eu posso selecionar esses elementos pra navegar dentro da arvore DOM  
   - 5 metodos de acesso:  
   1. por Marca   -> getElementsByTagName() 
-  2. por ID      -> getElementById()
+  2. por ID      -> getElementById()  
   3. por Nome    -> getElementsByName() 
   4. por Classe  -> getElementsByClassName() 
-  5. por Seletor -> querySelector() ||querySelectorAll()
+  5. por Seletor -> querySelector() ||querySelectorAll()  
