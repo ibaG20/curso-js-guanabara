@@ -115,10 +115,10 @@ Model
 
 ### REPETIÇÕES
 
- - enquanto uma condição ser verdadeira, um bloco de código se repete
- - quando a condição for falsa, o fluxo é desviado p lado de fora
+ - enquanto uma condição for verdadeira, um bloco de código se repete
+ - quando a condição for falsa, o fluxo é desviado pro lado de fora
  
  - estruturas:
     - while
-	- do...while
-	- for
+    - do...while
+    - for
