@@ -1,0 +1,34 @@
+body { 
+    background: #05012b;
+    font: normal 15pt Arial;
+}
+
+header {
+    color: #d2dfc8;
+    text-align: center;
+}
+
+section {
+    background-color: #d2dfc8;
+    color: #62455b;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px #141827ce;
+}
+
+div{
+    text-align: center;
+    padding: 5px;
+}
+
+section #imagem {
+    width: 400px;
+    margin-top: 1rem;
+}
+
+footer {
+    color: #d2dfc8;
+    text-align: center;
+}
