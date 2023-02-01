@@ -106,4 +106,10 @@ Model
 
 ### CONDIÇÕES
 
-- if...
+ - condição simples : if sem a clausula else
+ - condição composta: if com a clausula else
+ - condição aninhada: uma condição dentro da outra
+ - condição multipla: útil quando se trabalha com valores fixos, não é muito útil com intervalos de valores (switch...case)
+
+ obs: no switch..case o break é obrigatório em cada case 
+
