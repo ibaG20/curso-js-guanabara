@@ -113,3 +113,12 @@ Model
 
  obs: no switch..case o break é obrigatório em cada case 
 
+### REPETIÇÕES
+
+ - enquanto uma condição ser verdadeira, um bloco de código se repete
+ - quando a condição for falsa, o fluxo é desviado p lado de fora
+ 
+ - estruturas:
+    - while
+	- do...while
+	- for
