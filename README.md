@@ -1,8 +1,21 @@
 # Curso de JavaScript do Curso em Video 👩‍💻
 
- - window.alert
- - window.confirm
- - window.prompt
+### FUNÇÕES E COMANDOS DO JS
+
+ - comandos pra adicionar um "aviso" na tela
+    - window.alert  
+    - window.confirm  
+    - window.prompt  
+
+ - comandos pra mexer no css no JS:
+    - document.body.style.background ='#3b1b02'  
+
+ - comandos pra adicionar um elemento no html atravez do JS:
+    - var img = document.createElement('img') //criar elemento
+    - img.setAttribute('id', 'foto') //atribui um id pra imagem criada
+    - img.setAttribute('src', 'img/bebe-h.png') //atribui um src pra imagem criada
+    - res.appendChild(img) //adiciona um elemento filho(img) no elemento pai(res)
+	- res.innerHTML //adiciona um texto no elemento pai(res)
 
 ### VARIAVEIS, TIPOS PRIMITIVOS E TRATAMENTO DE DADOS
 
@@ -98,11 +111,18 @@ Model
  - fica dentro de um bloco (duas chaves)
  - function mover(){}  
   
--> eventos   
- - onclick
- - onmouseenter
- - onmouseout  
+---> eventos:
+
+-> eventos (no html)
+ - onclick     ="clicar()"
+ - onmouseenter...
+ - onmouseout  ...
  ...etc
+
+-> eventos (no JS)
+ - area.addEventListener('click', clicar)
+
+.obs: e em ambos os casos, a gente implementa a função 'clicar()' no JS pra completar
 
 ### CONDIÇÕES
 
