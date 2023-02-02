@@ -142,3 +142,30 @@ Model
     - while
     - do...while
     - for
+
+### VARIÁVEIS COMPOSTAS
+
+ - Variáveis Simples  : armazenam um valor por vez
+ - Variáveis Compostas: armazenam varios valores numa mesma estrutura
+
+ - Array/Vetor/Variável Composta: 
+      - variável que tem vários elementos
+	  - cada elemento é composto por seu valor e por uma chave de identificação
+
+image.png
+
+ - alguns elementos pra mexer com arrays:
+      - a.push(3)    // add o elemento '3' na ultima posição do array
+	  - a.length     // pega o tamanho do array
+	  - a.sort()     // posiciona os elementos em ordem crescente
+	  - a.indexOf(x) // mostra em qual posição se encontra o valor x
+
+ -  obs: lembrar do for pra arrays e objects:
+ for(let i in num){
+	console.log(num[i])
+ }
+ // pra cada posição em num, eu vou mostrar o num[i]
+
+ - obs: em JS, todo array é um object
+
+ ### FUNÇÕES (CONTINUAÇÃO)
