@@ -1,6 +1,7 @@
 body {
     background: #62455b;
     font: normal 15pt Arial;
+    margin-top: 4rem;
 }
 
 header {
@@ -16,6 +17,12 @@ section {
     width: 500px;
     margin: auto;
     box-shadow: 5px 5px 10px #141827ce;
+}
+
+select#flista{
+    width: 150px;
+    margin-top: 0.9rem;
+    margin-bottom: 1rem;
 }
 
 footer {
