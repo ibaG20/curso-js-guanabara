@@ -1,6 +1,6 @@
 # Curso de JavaScript do Curso em Video 👩‍💻
 
-### FUNÇÕES E COMANDOS DO JS
+### COMANDinhos DO JS
 
  - comandos pra adicionar um "aviso" na tela
     - window.alert  
@@ -169,3 +169,6 @@ image.png
  - obs: em JS, todo array é um object
 
  ### FUNÇÕES (CONTINUAÇÃO)
+  - ações executadas quandos chamadas, ou em decorrencia de um evento
+  - exemplo de evento: onclick
+
