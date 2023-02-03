@@ -172,3 +172,9 @@ image.png
   - ações executadas quandos chamadas, ou em decorrencia de um evento
   - exemplo de evento: onclick
 
+ - uma função pode receber parametros e retornar um resultado
+
+ - da pra colocar parametros opcionais, que são valores na declaração dos parametros
+ - dai caso na chamada n seja especificado os parametros, a função considera os os valores colocados na declaração
+
+ - vc pode colocar uma função dentro de uma variavel
