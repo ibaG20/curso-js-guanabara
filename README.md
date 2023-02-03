@@ -168,6 +168,8 @@ image.png
 
  - obs: em JS, todo array é um object
 
+ - arrays em JS aceita valores de tipos diferentes
+
  ### FUNÇÕES (CONTINUAÇÃO)
   - ações executadas quandos chamadas, ou em decorrencia de um evento
   - exemplo de evento: onclick
