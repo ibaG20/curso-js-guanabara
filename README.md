@@ -180,3 +180,17 @@ image.png
  - dai caso na chamada n seja especificado os parametros, a função considera os os valores colocados na declaração
 
  - vc pode colocar uma função dentro de uma variavel
+
+
+ ### OBJETO
+
+ - declaração de um objeto:
+      - a declaração de um array é feita com []
+	  - a declaração de um objeto é feita com {}
+ 
+ - let obj = {nome:'Gabi', sexo:'F', peso:65, engordar(p){}}
+
+ - pode ter vários tipos de variaveis
+ - pode ter uma function dentro
+ - em JS, um objeto é um objeto, e um array é um objeto
+ - vc consegue colocar funções dentro de variáveis
