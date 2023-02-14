@@ -209,9 +209,10 @@ image.png
 - variável global: declarada fora de qualquer função
 - variavel local: declarada dentro de um função
 - variavel local de escopo de bloco: declarada dentro de um bloco (ex: if, for, while, try catch...)
-- ex: 
-if (true) {var x = 5}
-console.log(x) //5
+- ex:     
+
+          - if (true) {var x = 5}
+          - console.log(x) //5
   
-if (true) {let y = 5}
-console.log(y) //ReferenceError: y não está definido
+          - if (true) {let y = 5}
+          - console.log(y) //ReferenceError: y não está definido
