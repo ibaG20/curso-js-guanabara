@@ -216,3 +216,5 @@ image.png
   
           - if (true) {let y = 5}
           - console.log(y) //ReferenceError: y não está definido
+
+
