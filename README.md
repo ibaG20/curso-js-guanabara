@@ -194,3 +194,24 @@ image.png
  - pode ter uma function dentro
  - em JS, um objeto é um objeto, e um array é um objeto
  - vc consegue colocar funções dentro de variáveis
+
+
+### OUTROS DETALHES:
+
+###### Declaração de variaveis:
+-
+- quando uma variavel, declarada usando **var** ou **let**, não tiver especificação de valor inicial ela vai ter valor **undefined**
+- o valor **undefined** se comporta como **false**
+- o valor **undefined** se converte pra **NaN** quando usado num contexto numérico
+- quando vc avalia uma variável como nula (var n = null), o valor nulo de comporta como 0 
+
+###### Escopo de variável:
+- variável global: declarada fora de qualquer função
+- variavel local: declarada dentro de um função
+- variavel local de escopo de bloco: declarada dentro de um bloco (ex: if, for, while, try catch...)
+- ex: 
+if (true) {var x = 5}
+console.log(x) //5
+  
+if (true) {let y = 5}
+console.log(y) //ReferenceError: y não está definido
