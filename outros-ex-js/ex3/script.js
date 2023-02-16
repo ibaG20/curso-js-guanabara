@@ -8,7 +8,7 @@ n[1] = prompt("Digite o segundo numero:")
 n[2] = prompt("Digite o terceiro numero:")
 
 let maior = 0
-let menor = 100
+let menor = maior
 
 for(var i = 0; i < 3; i++){
     if (n[i] > maior){
