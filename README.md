@@ -73,6 +73,14 @@
         - string.toUpperCase() // tudo fica maiusculo
         - string.toLowerCase() // tudo fica minusculo
 
+### NUMBERS
+  - algumas funções:
+        - num1.toString() //converte numa string temporariamente (pra ser fixo é só atribuir numa variável)
+        - num1.toString(2) //mostra a representação binária do numero
+        - num.toFixed(2) // deixa fixo com 2 casas decimais
+        - Number.isInteger(num1) //retorna (true/false) se o numero for inteiro ou não
+        - Number.isNaN(temp) // retorna (true/false) se for ou não um número
+
 ### OPERADORES
 
  - aritmeticos (+, -, *, /, %, **)  
