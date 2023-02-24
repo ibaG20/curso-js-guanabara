@@ -1,6 +1,6 @@
 # Curso de JavaScript do Curso em Video 👩‍💻
 
-### COMANDinhos DO JS
+### COMANDINHOS DO JS
 
  - comandos pra adicionar um "aviso" na tela
     - window.alert  
@@ -46,6 +46,32 @@
 	- n1.replace('.' , ',') //troca o ponto por virgula  
 	- n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})  
 
+### STRINGS
+ - pra ler strings com aspas: 
+       - "Um 'texto'"
+       - 'Um "texto"'
+       - `Um "texto"` ou `Um 'texto'`
+
+  - a barra invertida serve pra escapar um caractere, ent
+        - pra colocar aspas dentro do texto, vc tb pode fazer: "Um \"texto\""
+        - se eu quero colocar um "\", então eu preciso colocar \\, por que uma delas vai sumir
+
+  - strings são indexadas
+        - string.charAt(6) //pega o elemento da posição 6
+        - string.concat(('Olá', ' mundo')) //faz oq o sinal de + faz
+        - string.indexOf('texto') //em qual index começa a palavra "texto"
+        - string.indexOf('o', 3) //index da letra o depois do index 3
+        - string.lastIndexOf() //começa do final da string
+        - string.match() //sobre expressões regulares...
+        - string.replace('atual', 'nova') //substitui uma palavra por outra
+        - string.length //pega a quantidade de caracteres
+        - string.slice(2, 5) //mostra os caracteres de 2 a 5
+        - string.slice(-5, -1) // mostra os caracteres olhando de trás pra frente
+        - string.substring(string.length - 5, string.length - 1) //faz a mesma coisa que o anterior so que mais verboso
+        - string.split(' ') // separa cada elemento da string e coloca dentro de ''
+        - string.split(' ', 3) //igual o anterior, mas coloca apenas 3 elementos
+        - string.toUpperCase() // tudo fica maiusculo
+        - string.toLowerCase() // tudo fica minusculo
 
 ### OPERADORES
 
@@ -198,8 +224,13 @@ image.png
 
 ### OUTROS DETALHES:
 
+###### Variáveis
+- HOISTING: você pode usar uma variável e declara-la depois sem levar uma exceção. Esse conceito é conhecido como hoisting, e as variáveis que são hoisted retornam um valor undefined. 
+- GLOBAIS: sao propriedades do *objeto global* (window), então vc pode acessar variaveis globais usando a sintaxe (window.variavel...)
+- CONSTANTES: é declarada atraves da palavra const. Ela deve ser iniciada com um valor e não pode ser alterada ou declarada novamente. Além disso, n pode ter o mesmo nome de uma variavel
+
 ###### Declaração de variaveis:
--
+
 - quando uma variavel, declarada usando **var** ou **let**, não tiver especificação de valor inicial ela vai ter valor **undefined**
 - o valor **undefined** se comporta como **false**
 - o valor **undefined** se converte pra **NaN** quando usado num contexto numérico
@@ -217,4 +248,28 @@ image.png
           - if (true) {let y = 5}
           - console.log(y) //ReferenceError: y não está definido
 
+##### Estrutura de dados e tipos:
+- 6 tipos **primitivos**:
+     - boolean
+     - null
+     - undefined
+     - number
+     - string
+     - symbol
+     - object
 
+- os tipos de dados são convertidos conforme a necessidade durante a execução do codigo
+
+- literais: 
+    - usados pra representar valores em JS. Eles sao valores fixados, não variaveis
+    - temos: array literal, literais boolean, literais de ponto flutuante, inteiros, objeto literal, string literal
+    - ARRAY LITERAL é um array inicializado com os valores especificados e seu comprimento é definido com o numero de elementos especificados
+
+- carateres especiais em string:
+    - \n: quebra de linha
+    - \": aspas duplas
+    - etc...
+
+- caracteres de escape: caracteres que nao sao especiais, mas ainda assim precedidos de barra invertida, ela é ignorada e o uso será obsoleto
+    - var quote = "Ele lê \"The Cremation of Sam McGee\" de R.W. Service.";
+    - console.log (quote) // Ele lê "The Cremation of Sam McGee" de R.W. Service.
