@@ -47,10 +47,9 @@
 	- n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})  
 
 ### STRINGS
- - pra ler strings com aspas: 
-       - "Um 'texto'"
+ - pra ler strings com aspas:   
+       - "Um 'texto'"    
        - 'Um "texto"'
-       - `Um "texto"` ou `Um 'texto'`
 
   - a barra invertida serve pra escapar um caractere, ent
         - pra colocar aspas dentro do texto, vc tb pode fazer: "Um \"texto\""
