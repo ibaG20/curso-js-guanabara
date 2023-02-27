@@ -80,6 +80,27 @@
         - num.toFixed(2) // deixa fixo com 2 casas decimais
         - Number.isInteger(num1) //retorna (true/false) se o numero for inteiro ou não
         - Number.isNaN(temp) // retorna (true/false) se for ou não um número
+  - 10 / 0 
+     - não da erro
+     - o valor é true se colocado num boolean
+     - quanto mais perto de zero maior o valor
+     - o resultado é 'Infitiny'
+
+### MATH
+ - Math.floor(num) //arredonda pra baixo
+ - Math.ceil(num)  //arredonda pra cima
+ - Math.round(num) //arredonda pro mais proximo
+ - Math.max(1, 2, 3, 4, 5, 6) //mostra o maior numero dessa sequencia
+ - Math.min(1, 2, 3, 4, 5, 6) //mostra o menor numero dessa sequencia
+ - Math.random() //gera um numero aleatorio com varias casas decimais
+ - Math.random() * (10 - 5) + 5 // gera um numero aleatorio entre 10 e 5
+ - Math.round(Math.random()) //gera um numero aleatorio arredondado
+ - Math.PI // gera o valor de PI
+ - Math.pow(2, 10) //2 elevado a 10 (2 ** 10)
+ - 2 ** 10         //2 elevado a 10
+
+### ARRAYS
+ - 
 
 ### OPERADORES
 
