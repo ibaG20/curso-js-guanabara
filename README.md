@@ -223,27 +223,27 @@ obs: ** = potencia
            - !== diferente estrito (checa valor e tipo)
 
    - exemplo:  
-    	   . 10 == '10'  -> o resultado é TRUE, o javascript faz a conversão de tipos  
+    	     . 10 == '10'  -> o resultado é TRUE, o javascript faz a conversão de tipos  
            . 10 === '10' -> o resultado é FALSE, verifica tanto o valor como o tipo  
            . 10 != '10'  -> o resultado é FALSE  
-           . 10 !== '10' -> o resultado é TRUE  
+           . 10 !== '10' -> o resultado é TRUE 
+
+   - obs: os operadores (==, ===, !=, !==) são chamados também *OPERADORES DE IDENTIDADE*
 
  ###### OPERADORES LÓGICOS
+   - sempre retornam boolean
 
-
- ###### OPERADORES DE IDENTIDADE:  
-	- 5 == 5    -> true  
-	- 5 == '5'  -> true  // == nn testa o tipo  
-	- 5 === '5' -> false // === testa o tipo (operador de igualdade restrita)  
-	- 5 === 5   -> true  
-	- 5 !== '5' -> true  
-
--> operadores logicos e aritmeticos:  a > b && b % 2 == 0    
-	. primeiro eu faço os aritmeticos:  
-  a > b  
-	b % 2 == 0  
-	. dps eu faço o logico:  
-  (a > b) && (b % 2 == 0)  
+           - && : AND
+           - || : OR
+           - !  : NOT
+   
+###### EXEMPLO: operadores logicos e aritmeticos:  
+    - a > b && b % 2 == 0    
+	    -  primeiro eu faço os aritmeticos:  
+         1. a > b  
+	      2. b % 2 == 0  
+	    - dps eu faço o logico:  
+         3. (a > b) && (b % 2 == 0)  
 
  ###### OPERADOR TERNÁRIO
  - composto por dois simbolos na msm expressão-> ? e :
