@@ -210,12 +210,33 @@
 obs: ** = potencia  
      5 ** 2 = 25  
 
--> operadores de identidade:  
-	5 == 5    -> true  
-	5 == '5'  -> true  // == nn testa o tipo  
-	5 === '5' -> false // === testa o tipo (operador de igualdade restrita)  
-	5 === 5   -> true  
-	5 !== '5' -> true  
+ ###### OPERADORES DE COMPARAÇÃO
+   - sempre retornam boolean
+
+           - >   maior que
+           - >=  maior ou igual a
+           - <   menor que
+           - <=  menor ou igual a
+           - ==  igualdade (não é recomendado usar esse)
+           - === igualdade estrita (checa valor e tipo)
+           - !=  diferente (não é recomendado usar esse)
+           - !== diferente estrito (checa valor e tipo)
+
+   - 10 == '10'  -> o resultado é TRUE, o javascript faz a conversão de tipos
+   - 10 === '10' -> o resultado é FALSE, verifica tanto o valor como o tipo
+
+   - 10 != '10'  -> o resultado é FALSE
+   - 10 !== '10' -> o resultado é TRUE
+
+ ###### OPERADORES LÓGICOS
+
+
+ ###### OPERADORES DE IDENTIDADE:  
+	- 5 == 5    -> true  
+	- 5 == '5'  -> true  // == nn testa o tipo  
+	- 5 === '5' -> false // === testa o tipo (operador de igualdade restrita)  
+	- 5 === 5   -> true  
+	- 5 !== '5' -> true  
 
 -> operadores logicos e aritmeticos:  a > b && b % 2 == 0    
 	. primeiro eu faço os aritmeticos:  
@@ -224,7 +245,7 @@ obs: ** = potencia
 	. dps eu faço o logico:  
   (a > b) && (b % 2 == 0)  
 
--> Operador ternário
+ ###### OPERADOR TERNÁRIO
  - composto por dois simbolos na msm expressão-> ? e :
  - se chama ternario pq tem tres partes:
  . teste ? true : false
