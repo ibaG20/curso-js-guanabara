@@ -15,9 +15,55 @@
     - img.setAttribute('id', 'foto') //atribui um id pra imagem criada
     - img.setAttribute('src', 'img/bebe-h.png') //atribui um src pra imagem criada
     - res.appendChild(img) //adiciona um elemento filho(img) no elemento pai(res)
-	- res.innerHTML //adiciona um texto no elemento pai(res)
+	 - res.innerHTML //adiciona um texto no elemento pai(res)
 
-### VARIAVEIS, TIPOS PRIMITIVOS E TRATAMENTO DE DADOS
+### VARIAVEIS
+
+###### Variáveis
+- HOISTING: você pode usar uma variável e declara-la depois sem levar uma exceção. Esse conceito é conhecido como hoisting, e as variáveis que são hoisted retornam um valor undefined. 
+- GLOBAIS: sao propriedades do *objeto global* (window), então vc pode acessar variaveis globais usando a sintaxe (window.variavel...)
+- CONSTANTES: é declarada atraves da palavra const. Ela deve ser iniciada com um valor e não pode ser alterada ou declarada novamente. Além disso, n pode ter o mesmo nome de uma variavel
+
+###### Declaração de variaveis:
+
+- quando uma variavel, declarada usando **var** ou **let**, não tiver especificação de valor inicial ela vai ter valor **undefined**
+- o valor **undefined** se comporta como **false**
+- o valor **undefined** se converte pra **NaN** quando usado num contexto numérico
+- quando vc avalia uma variável como nula (var n = null), o valor nulo de comporta como 0 
+
+###### Escopo de variável:
+- variável global: declarada fora de qualquer função
+- variavel local: declarada dentro de um função
+- variavel local de escopo de bloco: declarada dentro de um bloco (ex: if, for, while, try catch...)
+- ex:     
+
+          - if (true) {var x = 5}
+          - console.log(x) //5
+  
+          - if (true) {let y = 5}
+          - console.log(y) //ReferenceError: y não está definido
+
+
+### TIPOS PRIMITIVOS E TRATAMENTO DE DADOS
+
+##### Estrutura de dados e tipos:
+- 6 tipos **primitivos**:
+     - boolean
+     - null
+     - undefined
+     - number
+     - string
+     - symbol
+     - object
+
+- os tipos de dados são convertidos conforme a necessidade durante a execução do codigo
+
+ -> Primitivos (imutáveis): 
+    - string, number, boolean, undefined, null(bigint, symbol)
+    - valores copiados
+ -> Referência (mutável): 
+    - arrays, objetos, function
+    - passados por referência
 
  -> quando a gente usa o .prompt, o valor sempre vai ser uma string, ent pra mexer com numeros tem q fazer a conversão
 
@@ -99,7 +145,11 @@
  - 2 ** 10         //2 elevado a 10
 
 ### ARRAYS
- - 
+ - são indexados
+ - lista[lista.length] = 'add' //adiciona um valor no final do array
+ - lista.push('add') //adiciona um valor no final do array
+ - lista.unshift('add') //adiciona um valor no inicio do array, e assim todos mudam de posição
+
 
 ### OPERADORES
 
@@ -197,7 +247,7 @@ Model
     - do...while
     - for
 
-### VARIÁVEIS COMPOSTAS
+### VARIÁVEIS COMPOSTAS (ARRAY)
 
  - Variáveis Simples  : armazenam um valor por vez
  - Variáveis Compostas: armazenam varios valores numa mesma estrutura
@@ -224,7 +274,7 @@ image.png
 
  - arrays em JS aceita valores de tipos diferentes
 
- ### FUNÇÕES (CONTINUAÇÃO)
+ ### FUNÇÕES
   - ações executadas quandos chamadas, ou em decorrencia de um evento
   - exemplo de evento: onclick
 
@@ -234,7 +284,6 @@ image.png
  - dai caso na chamada n seja especificado os parametros, a função considera os os valores colocados na declaração
 
  - vc pode colocar uma função dentro de uma variavel
-
 
  ### OBJETO
 
@@ -250,54 +299,4 @@ image.png
  - vc consegue colocar funções dentro de variáveis
 
 
-### OUTROS DETALHES:
 
-###### Variáveis
-- HOISTING: você pode usar uma variável e declara-la depois sem levar uma exceção. Esse conceito é conhecido como hoisting, e as variáveis que são hoisted retornam um valor undefined. 
-- GLOBAIS: sao propriedades do *objeto global* (window), então vc pode acessar variaveis globais usando a sintaxe (window.variavel...)
-- CONSTANTES: é declarada atraves da palavra const. Ela deve ser iniciada com um valor e não pode ser alterada ou declarada novamente. Além disso, n pode ter o mesmo nome de uma variavel
-
-###### Declaração de variaveis:
-
-- quando uma variavel, declarada usando **var** ou **let**, não tiver especificação de valor inicial ela vai ter valor **undefined**
-- o valor **undefined** se comporta como **false**
-- o valor **undefined** se converte pra **NaN** quando usado num contexto numérico
-- quando vc avalia uma variável como nula (var n = null), o valor nulo de comporta como 0 
-
-###### Escopo de variável:
-- variável global: declarada fora de qualquer função
-- variavel local: declarada dentro de um função
-- variavel local de escopo de bloco: declarada dentro de um bloco (ex: if, for, while, try catch...)
-- ex:     
-
-          - if (true) {var x = 5}
-          - console.log(x) //5
-  
-          - if (true) {let y = 5}
-          - console.log(y) //ReferenceError: y não está definido
-
-##### Estrutura de dados e tipos:
-- 6 tipos **primitivos**:
-     - boolean
-     - null
-     - undefined
-     - number
-     - string
-     - symbol
-     - object
-
-- os tipos de dados são convertidos conforme a necessidade durante a execução do codigo
-
-- literais: 
-    - usados pra representar valores em JS. Eles sao valores fixados, não variaveis
-    - temos: array literal, literais boolean, literais de ponto flutuante, inteiros, objeto literal, string literal
-    - ARRAY LITERAL é um array inicializado com os valores especificados e seu comprimento é definido com o numero de elementos especificados
-
-- carateres especiais em string:
-    - \n: quebra de linha
-    - \": aspas duplas
-    - etc...
-
-- caracteres de escape: caracteres que nao sao especiais, mas ainda assim precedidos de barra invertida, ela é ignorada e o uso será obsoleto
-    - var quote = "Ele lê \"The Cremation of Sam McGee\" de R.W. Service.";
-    - console.log (quote) // Ele lê "The Cremation of Sam McGee" de R.W. Service.
