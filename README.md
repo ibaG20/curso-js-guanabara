@@ -236,6 +236,21 @@ obs: ** = potencia
            - && : AND
            - || : OR
            - !  : NOT
+
+   - qualquer coisa diferente de (false, 0, '', "", ``, null, undefined, NaN) é avaliado como TRUE no JavaScript
+
+   - **AVALIAÇÃO DE CURTO-CIRTCUITO**:
+      - &&
+         - precisa de só uma expressão falsa pra ser falso
+         - no momento que eu encontro a operação falsa eu não preciso continuar a avaliação
+         - exemplo: console.log('Gabi', NaN, 'Thay')
+         - no exemplo, o resultado será 'NaN', porque é o primeiro valor falso que ele encontrou
+      
+      - ||
+         - exemplo: console.log(0 || false || null || 'Gabi' || true)
+         - precisa de só uma expressão verdadeira pra ser verdadeiro
+         - então no exemplo o resultado é 'Gabi', que é o primeiro valor verdadeiro que ele encontrou
+
    
 ###### EXEMPLO: operadores logicos e aritmeticos:  
     - a > b && b % 2 == 0    
