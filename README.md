@@ -239,10 +239,10 @@ obs: ** = potencia
    
 ###### EXEMPLO: operadores logicos e aritmeticos:  
     - a > b && b % 2 == 0    
-	    -  primeiro eu faço os aritmeticos:  
+	a)  primeiro eu faço os aritmeticos:  
          1. a > b  
-	      2. b % 2 == 0  
-	    - dps eu faço o logico:  
+	 2. b % 2 == 0  
+	b) dps eu faço o logico:  
          3. (a > b) && (b % 2 == 0)  
 
  ###### OPERADOR TERNÁRIO
