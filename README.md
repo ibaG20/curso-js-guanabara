@@ -222,11 +222,11 @@ obs: ** = potencia
            - !=  diferente (não é recomendado usar esse)
            - !== diferente estrito (checa valor e tipo)
 
-   - 10 == '10'  -> o resultado é TRUE, o javascript faz a conversão de tipos
-   - 10 === '10' -> o resultado é FALSE, verifica tanto o valor como o tipo
-
-   - 10 != '10'  -> o resultado é FALSE
-   - 10 !== '10' -> o resultado é TRUE
+   - exemplo:  
+    	   . 10 == '10'  -> o resultado é TRUE, o javascript faz a conversão de tipos  
+           . 10 === '10' -> o resultado é FALSE, verifica tanto o valor como o tipo  
+           . 10 != '10'  -> o resultado é FALSE  
+           . 10 !== '10' -> o resultado é TRUE  
 
  ###### OPERADORES LÓGICOS
 
