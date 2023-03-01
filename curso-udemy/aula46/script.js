@@ -42,3 +42,5 @@ console.log('NOW ------------------')
 console.log(Date.now()) //saida: 1677689223767
 let data4 = new Date(1677689223767)
 console.log(data4.toString())
+let data5 = new Date(Date.now())
+console.log(data5.toString())
