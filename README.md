@@ -1,5 +1,8 @@
 # Estudo de JavaScript 👩‍💻
 
+- https://www.youtube.com/playlist?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1  
+- https://www.udemy.com/course/curso-de-javascript-moderno-do-basico-ao-avancado/
+
 ## JavaScript -> BÁSICO 
 
 ### COMANDINHOS DO JS
@@ -277,6 +280,17 @@ obs: ** = potencia
  - condição multipla: útil quando se trabalha com valores fixos, não é muito útil com intervalos de valores (switch...case)
 
  obs: no switch..case o break é obrigatório em cada case 
+
+
+### DATE
+ - é uma função contrutora
+ - const data = new Date()
+
+ - data = new Date(0) //hora inicial -> 01/01/1970 (Timestamp unix / época unix)
+
+//                  a    m  d   h   M  s   ms
+ - data = new Date(2019, 6, 23, 13, 0, 30, 10)
+ - data = new Date('2019-06-23 13:00:30.10')
 
 
 ### REPETIÇÕES
