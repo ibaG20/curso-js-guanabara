@@ -63,7 +63,6 @@ function setResultado (msg, isValid) {
 function criaP (){
     //CRIAR UM ELEMENTO HTML NO JS
     const p = document.createElement('p');
-    //p.classList.add('paragrafo-resultado');
     return p;
 
     /** PRA COLOCAR UMA CLASS NO ELEMENTO CRIADO

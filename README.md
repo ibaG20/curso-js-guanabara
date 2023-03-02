@@ -1,11 +1,11 @@
-# Estudo de JavaScript 👩‍💻
+# --------> Estudo de JavaScript 👩‍💻
 
 - https://www.youtube.com/playlist?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1  
 - https://www.udemy.com/course/curso-de-javascript-moderno-do-basico-ao-avancado/
 
-## JavaScript -> BÁSICO 
+# JavaScript -> BÁSICO 
 
-### COMANDINHOS DO JS
+## COMANDINHOS DO JS
 
  - comandos pra adicionar um "aviso" na tela
     - window.alert  
@@ -23,36 +23,48 @@
 	 - res.innerHTML //adiciona um texto no elemento pai(res)
 
 
-### VARIAVEIS
+## VARIAVEIS
 
-###### Variáveis
+#### Variáveis
 - HOISTING: você pode usar uma variável e declara-la depois sem levar uma exceção. Esse conceito é conhecido como hoisting, e as variáveis que são hoisted retornam um valor undefined. 
 - GLOBAIS: sao propriedades do *objeto global* (window), então vc pode acessar variaveis globais usando a sintaxe (window.variavel...)
 - CONSTANTES: é declarada atraves da palavra const. Ela deve ser iniciada com um valor e não pode ser alterada ou declarada novamente. Além disso, n pode ter o mesmo nome de uma variavel
 
-###### Declaração de variaveis:
+#### Declaração de variaveis:
 
 - quando uma variavel, declarada usando **var** ou **let**, não tiver especificação de valor inicial ela vai ter valor **undefined**
 - o valor **undefined** se comporta como **false**
 - o valor **undefined** se converte pra **NaN** quando usado num contexto numérico
 - quando vc avalia uma variável como nula (var n = null), o valor nulo de comporta como 0 
 
-###### Escopo de variável:
+#### VAR E LET
+ - let:
+       - let tem escopo de bloco
+
+ - var:
+       - só tem escopo de função
+
+#### Escopo de variável:
 - variável global: declarada fora de qualquer função
 - variavel local: declarada dentro de um função
 - variavel local de escopo de bloco: declarada dentro de um bloco (ex: if, for, while, try catch...)
-- ex:     
-
+      - ex:     
           - if (true) {var x = 5}
           - console.log(x) //5
   
           - if (true) {let y = 5}
           - console.log(y) //ReferenceError: y não está definido
+- variavel com escopo de função: declarado dentro de uma função
+      - ex:
+          - function falaOi(){var sobrenome = 'Miranda';}
+          - console.log(sobrenome)
+          - falaOi();
+          - //resultado: not defined...
 
 
-### TIPOS PRIMITIVOS E TRATAMENTO DE DADOS
+## TIPOS PRIMITIVOS E TRATAMENTO DE DADOS
 
-##### Estrutura de dados e tipos:
+#### Estrutura de dados e tipos:
 - 6 tipos **primitivos**:
      - boolean
      - null
@@ -99,7 +111,7 @@
 	- n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})  
 
 
-### STRINGS
+## STRINGS
  - pra ler strings com aspas:   
        - "Um 'texto'"    
        - 'Um "texto"'
@@ -108,7 +120,7 @@
         - pra colocar aspas dentro do texto, vc tb pode fazer: "Um \"texto\""
         - se eu quero colocar um "\", então eu preciso colocar \\, por que uma delas vai sumir
 
-  - strings são indexadas
+  - strings são indexadas  
         - string.charAt(6) //pega o elemento da posição 6  
         - string.concat(('Olá', ' mundo')) //faz oq o sinal de + faz  
         - string.indexOf('texto') //em qual index começa a palavra "texto"  
@@ -167,7 +179,7 @@
       - cada elemento é composto por seu valor e por uma chave de identificação
 
  - alguns elementos pra mexer com arrays:
-          - a.push(3)    // add o elemento '3' na ultima posição do array
+     - a.push(3)    // add o elemento '3' na ultima posição do array
 	  - a.length     // pega o tamanho do array
 	  - a[a.length] = 'add' //adiciona um valor no final do array
 	  - a.sort()     // posiciona os elementos em ordem crescente
@@ -179,18 +191,18 @@
   - ações executadas quandos chamadas, ou em decorrencia de um evento
   - exemplo de evento: onclick
 
- - uma função pode receber parametros e retornar um resultado
+  - uma função pode receber parametros e retornar um resultado
 
- - da pra colocar parametros opcionais, que são valores na declaração dos parametros
- - dai caso na chamada n seja especificado os parametros, a função considera os os valores colocados na declaração
+  - da pra colocar parametros opcionais, que são valores na declaração dos parametros
+  - dai caso na chamada n seja especificado os parametros, a função considera os os valores colocados na declaração
 
- - vc pode colocar uma função dentro de uma variavel
+  - vc pode colocar uma função dentro de uma variavel
 
  ### OBJETO
 
  - declaração de um objeto:
-      - a declaração de um array é feita com []
-	  - a declaração de um objeto é feita com {}
+   - a declaração de um array é feita com [ ]  
+	- a declaração de um objeto é feita com {}  
  
  - let obj = {nome:'Gabi', sexo:'F', peso:65, engordar(p){}}
 
@@ -200,20 +212,21 @@
  - vc consegue colocar funções dentro de variáveis
 
 
-## JavaScript -> LÓGICA DE PROGRAMAÇÃO 
+# JavaScript -> LÓGICA DE PROGRAMAÇÃO 
 
-### OPERADORES
+## OPERADORES
 
- - aritmeticos (+, -, *, /, %, **)  
+- aritmeticos (+, -, *, /, %, **)  
  - atribuição  
  - relacionais  
  - logicos  
  - ternarios  
 
-obs: ** = potencia  
-     5 ** 2 = 25  
+ > obs:         
+          ** = potencia  
+          5 ** 2 = 25  
 
- ###### OPERADORES DE COMPARAÇÃO
+ #### OPERADORES DE COMPARAÇÃO
    - sempre retornam boolean
 
            - >   maior que
@@ -225,7 +238,7 @@ obs: ** = potencia
            - !=  diferente (não é recomendado usar esse)
            - !== diferente estrito (checa valor e tipo)
 
-   - exemplo:  
+   > exemplo:  
     	     . 10 == '10'  -> o resultado é TRUE, o javascript faz a conversão de tipos  
            . 10 === '10' -> o resultado é FALSE, verifica tanto o valor como o tipo  
            . 10 != '10'  -> o resultado é FALSE  
@@ -233,7 +246,7 @@ obs: ** = potencia
 
    - obs: os operadores (==, ===, !=, !==) são chamados também *OPERADORES DE IDENTIDADE*
 
- ###### OPERADORES LÓGICOS
+ #### OPERADORES LÓGICOS
    - sempre retornam boolean
 
            - && : AND
@@ -255,7 +268,7 @@ obs: ** = potencia
          - então no exemplo o resultado é 'Gabi', que é o primeiro valor verdadeiro que ele encontrou
 
    
-###### EXEMPLO: operadores logicos e aritmeticos:  
+#### EXEMPLO: operadores logicos e aritmeticos:  
     - a > b && b % 2 == 0    
 	a)  primeiro eu faço os aritmeticos:  
          1. a > b  
@@ -263,7 +276,7 @@ obs: ** = potencia
 	b) dps eu faço o logico:  
          3. (a > b) && (b % 2 == 0)  
 
- ###### OPERADOR TERNÁRIO
+ #### OPERADOR TERNÁRIO
  - composto por dois simbolos na msm expressão-> ? e :
  - se chama ternario pq tem tres partes:
  . teste ? true : false
@@ -283,17 +296,27 @@ obs: ** = potencia
 
 
 ### DATE
- - é uma função contrutora
+ - é uma função construtora
  - const data = new Date()
 
  - data = new Date(0) //hora inicial -> 01/01/1970 (Timestamp unix / época unix)
 
-//                  a    m  d   h   M  s   ms
- - data = new Date(2019, 6, 23, 13, 0, 30, 10)
+ - data = new Date(2019, 6, 23, 13, 0, 30, 10) // a m d h M s ms
  - data = new Date('2019-06-23 13:00:30.10')
 
 
-### REPETIÇÕES
+## ATRIBUIÇÃO VIA DESESTRUTURAÇÃO
+ - A desestruturação permite que você atribua valores de um array ou objeto a variáveis individuais, em uma única linha de código
+
+  ###### ARRAYS
+     A desestruturação pode ser usada em arrays, permitindo que você extraia valores individuais em variáveis separadas.
+
+
+  ###### OBJETO 
+     Você pode desestruturar um objeto atribuindo suas propriedades a variáveis separadas
+
+
+## REPETIÇÕES
 
  - enquanto uma condição for verdadeira, um bloco de código se repete
  - quando a condição for falsa, o fluxo é desviado pro lado de fora
@@ -302,6 +325,28 @@ obs: ** = potencia
     - while
     - do...while
     - for
+
+ #### for in
+   - le os indices/chaves do array/objeto
+
+           const frutas = ['maçã', 'laranja', 'pera']
+           for (let indice in frutas) {
+               console.log(frutas[indice]);
+           }
+  
+           const pessoa = {nome:'Luiz', sobrenome: 'Marreto' idade: 30};
+           for(let chave in pessoa) {
+               console.log(pessoa[chave]);
+           }
+
+
+ #### for of
+   - quando eu tenho uma string iteravel eu posso usar o 
+     
+            const nome = 'Gabi Marreto'
+            for (let valor of nome){
+               console.log(valor); //mostra letra por letra, uma embaixo da outra
+            }
 
 
 ## JavaScript -> DOM 
