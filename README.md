@@ -328,6 +328,7 @@
 
  #### for in
    - le os indices/chaves do array/objeto
+   - imprime cada palavra uma embaixo da outra
 
            const frutas = ['maçã', 'laranja', 'pera']
            for (let indice in frutas) {
@@ -341,8 +342,9 @@
 
 
  #### for of
-   - quando eu tenho uma string iteravel eu posso usar o 
-     
+   - útil quando eu tenho objetos iteraveis (string, array...)
+   - imprime cada letra uma embaixo da outra
+                          0123456789
             const nome = 'Gabi Marreto'
             for (let valor of nome){
                console.log(valor); //mostra letra por letra, uma embaixo da outra
